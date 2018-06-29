@@ -1,0 +1,3 @@
+Var_dump: is used to go thru variables 
+$_POST: this means all the data that goes thru the post method
+$_GET: this means access the variables 

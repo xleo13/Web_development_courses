@@ -1,0 +1,217 @@
+/*Luis Gutierrez*/
+body {
+	margin: 0px;
+	font-size: 100%;
+	font-family: arial, sans-serif;
+}
+/*  top  banner */
+
+#banner {
+	width: 100%;
+	background-color: #eaeaea;
+}
+
+#outer {
+	width: 960px;
+	margin: 50px auto;
+	border: 2px solid navy;
+	background-color: #fff;
+	padding-left: 10px;
+}
+
+#bannertxt {
+	color: #000;
+	font-size: 2em;
+	padding: 20px;
+	background-color: #1f3c7e;
+	color: #fff;
+	text-align: center;
+}
+
+/*  navigation   */
+#navtop {
+	outline: 2px solid #000;
+	padding: 15px 0px;
+	background-image: url(images/bg.jpg);
+	background-position: left bottom;
+	position: relative;
+}
+/*  clears the float   */
+
+#navtop:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	clear: left;
+}
+
+#navtop li {
+	width: 150px;
+	float: left;
+	text-align: center;
+}
+
+#navtop ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin: 0px auto;
+	width: 750px;
+}
+
+#navtop a {
+	background-color: rgb(228, 229, 231);
+	border-right: 2px solid navy;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+#navtop li:last-of-type a {
+	border-right: none;
+}
+
+#navtop a:hover {
+	background-color: #dcdcdc;
+}
+
+#navtop li li {
+	float: none
+}
+
+#navtop li li a {
+	border-top: 1px solid navy;
+	border-right: none;
+}
+
+#navtop li ul {
+	display: none;
+	position: absolute;
+}
+
+#navtop li:hover ul {
+	display: block;
+}
+
+/* news aside */
+#news {
+	margin-top: 50px;
+}
+
+#news1,
+#news2 {
+	background-color: rgb(228, 229, 231);
+	outline: 1px solid #000;
+	width: 30%;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+#news h2 {
+	font-size: 1.3em;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+#news1 {
+	float: left;
+}
+
+#news2 {
+	float: right;
+}
+
+/* commonly knows as the 'clear fix' to clear floats */
+
+#news:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+/* other areas */
+		section {
+	margin-top: 50px;
+}
+
+header,
+footer {
+	text-align: center;
+}
+
+footer {
+	padding: 20px;
+}
+
+/*descendant selectors*/
+#outer header > h1 {
+	font-size: 1.6em;
+}
+
+#outer header > h2 {
+	font-size: 1.25em;
+}
+
+#college h2,#resources h2 {
+	color: #000080;
+	font-size: 1.25em;
+}
+
+#webd > h2 {
+	color: #000080;
+	font-size: 1.25em;
+}
+
+#webd div h2 {
+	color: #000080;
+	font-size: 1.0em;
+}
+
+#webd div > h2 + p{
+	font-style: italic;
+}
+
+#resources ul li a {
+	text-decoration: none;
+	color: #000080;
+}
+
+#resources ul li {
+	padding: 20px 20px 0px 0px;
+	list-style-type: none;
+}
+
+#resources ul li a[href*='www']{
+	background-image: url("images/icon_new_window.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+}
+
+#resources ul li a[href$='.pdf'] {
+	background-image: url("images/icon_pdf.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+}
+
+#ferpa h2 {
+	color: #000080;
+	font-size: 1.25em;
+}
+
+#ferpa p > a {
+	text-decoration: none;
+}
+
+#ferpa p > a[href$='.pdf'] {
+	background-image: url("images/icon_pdf.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+}

@@ -1,0 +1,17 @@
+CSS2 selectors
+E[attr] //selects simple attribute
+E[attr=‘value’] //exact way of searching for attributes
+E[attr~=‘value’] //searches partial word in attr value
+E[attr|=‘value’] //searches for first argument in value
+
+CSS3 selectors
+E[attr^=‘value’] //searches beginning string value only
+//can be used to apply https protocols, ftp, Mailto 
+E[attr$=‘value’] //searches ending string value only
+// can be used to apply .doc, .pdf, .svg etc..
+E[attr*=‘value’] // searches for any matching string
+// We can also chain attribute selectors 
+// ex) a[href^=‘http://’][href*=‘folder2/’][href$=‘.pdf’]
+
+E + F {…} // searches adjacent sibling combinator
+E ~ F {…} //searches after E 
